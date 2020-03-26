@@ -1,15 +1,28 @@
 body {
-  background-color: green;
+  margin:0;
+  font-family:sans-serif, Arial;
+  background-color:green;
+  overflow-x:hidden;
 }
+h1{text-align:center; }
 
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: blue;
-  }
-
-  header{
-    display:grid;
-    grid-template-columns: 1fr;
-  }
+/*checkbox, wanneer checked, dan vind debugger ergens in de code een 'main', en die zal je dan de volgende waardes geven*/
+#toggleMenu:checked ~ main{
+margin-left:41vw;
+height:100vh;
 }
+nav{position: absolute;color:#FFF; background-color:red;}
+nav h4{text-align:center;}
+nav ul{margin:0; padding:0; list-style-type:none;border-bottom-color: bluel}
+nav li{margin-bottom:1px;
+  border-bottom:1px solid blue;}
+nav a{color:inherit; text-decoration:none; display:block; padding:1em; background-color:#000; cursor:pointer;
+transition: .3s ease-in-out;}
+nav a:hover{background-color:#f1f1f1; color:pink;}
+nav a.actief{background-color:#000; color:pink; border-right: solid 1em blue;}
+
+main{background:#fff; padding:2em;
+  width:100vw; transition:margin-left:0;margin-left:.6 ease-out;
+}
+img{}
+.validatie img{}
