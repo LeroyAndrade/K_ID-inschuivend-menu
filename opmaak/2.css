@@ -1,12 +1,11 @@
-/*zie Javascript.js*/
-/body {
+body {
   margin:0;
   font-family:sans-serif, Arial;
   background-color:green;
   overflow-x:hidden;
 }
 h1{text-align:center; }
-/**/
+
 /*checkbox, wanneer checked, dan vind debugger ergens in de code een 'main', en die zal je dan de volgende waardes geven*/
 #toggleMenu:checked ~ main{
 margin-left:10em;
@@ -32,10 +31,12 @@ te nemen met @supports voor een functie voor maar 1 webbrowser.*/
 #toggleMenu:checked ~ main #toggleLabel::before{
   content:"\2715";
 }
-
+#toggleLabel{
+  display: none;
+}
 
 /*! navigatie gaat mee met het scrollen ux friendly!*/
-nav{position: fixed;color:#FFF; background-color:red;}
+nav{position: fixed;color:#FFF; background-color:red;position: absolute;;}
 nav h4{text-align:center;}
 nav ul{margin:0; padding:0; list-style-type:none;border-bottom-color: blue;}
 nav li{border-bottom:1px solid #fff;}
